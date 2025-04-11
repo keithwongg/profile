@@ -4,6 +4,7 @@
   --default-bg: #181818;
   --default-txt: #9f9f9f;
   --default-tag: #5c5c5c;
+  --default-highlight: #CC9900;
 }
 
 #app {
@@ -15,12 +16,31 @@
   font-weight: normal;
 }
 
-a,
+a {
+  text-decoration: none;
+  color: var(--default-txt)
+}
+
+a:hover {
+  /* border: 1px var(--default-highlight) solid; */
+  /* border-radius: 5px; */
+  background-color: transparent;
+  color: var(--default-highlight);
+}
+
+/* a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
 }
 
 @media (hover: hover) {
