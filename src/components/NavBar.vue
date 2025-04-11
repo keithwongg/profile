@@ -25,15 +25,4 @@
     flex-direction: row;
     gap: 12px;
 }
-
-a {
-    color: var(--default-txt)
-}
-
-a:hover {
-    /* border: 1px var(--default-highlight) solid; */
-    /* border-radius: 5px; */
-    background-color: transparent;
-    color: var(--default-highlight);
-}
 </style>
