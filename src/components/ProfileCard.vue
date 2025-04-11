@@ -39,6 +39,10 @@ h1 {
     font-weight: bold;
 }
 
+a {
+    color: var(--default-txt);
+}
+
 .profile-card-container {
     height: fit-content;
     width: 500px;

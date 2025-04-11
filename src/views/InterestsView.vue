@@ -2,8 +2,9 @@
 </script>
 
 <template>
-    <h1>technical</h1>
-    <h1>hobbies</h1>
+    <div class="container">
+        <h1>bouldering, specifically moonboarding</h1>
+    </div>
 </template>
 
 <style scoped></style>

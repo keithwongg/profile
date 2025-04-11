@@ -3,8 +3,9 @@
 </script>
 
 <template>
-  <h1>Blog</h1>
-
+  <div class="container">
+    <h1>coming soon...</h1>
+  </div>
 </template>
 
 <style scoped></style>
