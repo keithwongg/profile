@@ -1,6 +1,8 @@
 <script setup>
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
+import NavBar from './components/NavBar.vue';
+
 const route = useRoute();
 const isBase = computed(() => route.name === 'home')
 </script>
@@ -13,6 +15,7 @@ const isBase = computed(() => route.name === 'home')
       </template>
     </RouterView>
   </main>
+  <NavBar />
 </template>
 
 <style scoped>
@@ -20,7 +23,6 @@ main {
   height: 100%;
   width: 100%;
 }
-
 
 .centralize {
   display: flex;

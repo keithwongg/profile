@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import WorkExperienceVue from '@/views/WorkExperienceVue.vue'
+import WorkView from '@/views/WorkView.vue'
 import InterestsView from '@/views/InterestsView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import BlogView from '@/views/BlogView.vue'
@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: '/work',
       name: 'work',
-      component: WorkExperienceVue
+      component: WorkView,
     },
     {
       path: '/projects',

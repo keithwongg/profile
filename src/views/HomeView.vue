@@ -9,42 +9,14 @@ const isBase = computed(() => route.name === 'home')
 <template>
     <div class="container">
         <ProfileCard v-if="isBase" />
-
-        <div v-if="isBase" class="navbar">
-            <RouterLink :to="{ name: 'work' }">
-                <span>Work Experience</span>
-            </RouterLink>
-            <RouterLink :to="{ name: 'projects' }">
-                <span>Projects</span>
-            </RouterLink>
-            <RouterLink :to="{ name: 'interests' }">
-                <span>Interests</span>
-            </RouterLink>
-            <RouterLink :to="{ name: 'blog' }">
-                <span>Blog</span>
-            </RouterLink>
-        </div>
-
     </div>
-
 </template>
 
 <style scoped>
-.navbar {
-    margin-top: 8px;
+.container {
     display: flex;
-    flex-direction: row;
-    gap: 12px;
-}
-
-a {
-    color: var(--default-txt)
-}
-
-a:hover {
-    /* border: 1px var(--default-highlight) solid; */
-    /* border-radius: 5px; */
-    background-color: transparent;
-    color: var(--default-highlight);
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
 }
 </style>
