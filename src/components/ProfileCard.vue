@@ -15,15 +15,15 @@ import faDownload from './icon/faDownload.vue';
         </div>
         <div class="social-links div3">
             <a class="tag" href="https://github.com/keithwongg" target="_blank" draggable="false">
-                <img alt="github" src="/public/github.png" draggable="false" />
+                <img alt="github" src="/github.png" draggable="false" />
                 <span>GitHub</span>
             </a>
             <a class="tag" href="https://www.linkedin.com/in/keith-wong-jun-hsien-3a6103158/" target="_blank"
                 draggable="false">
-                <img alt="linkedin" src="/public/linkedIn.png" draggable="false" />
+                <img alt="linkedin" src="/linkedIn.png" draggable="false" />
                 <span>LinkedIn</span>
             </a>
-            <a class="tag" href="/public/KEITH_WONG_JUN_HSIEN_Resume.pdf" target="_blank" draggable="false">
+            <a class="tag" href="/KEITH_WONG_JUN_HSIEN_Resume.pdf" target="_blank" draggable="false">
                 <i draggable="false">
                     <faDownload class="icon" />
                 </i>
