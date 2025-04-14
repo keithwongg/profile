@@ -12,6 +12,9 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+      meta: {
+        showNav: false
+      }
     },
     {
       path: '/work',

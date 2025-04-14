@@ -1,10 +1,11 @@
 <script setup>
+import faHouse from './icon/faHouse.vue';
 </script>
 
 <template>
     <div class="navbar-grid">
         <RouterLink :class="{ selected: $route.name === 'home' }" :to="{ name: 'home' }">
-            <span>Home</span>
+            <faHouse class="icon" />
         </RouterLink>
         <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }">
             <span>Work</span>
@@ -28,6 +29,7 @@
     width: 100%;
     height: 32px;
     border-top: 1px var(--default-highlight) solid;
+    background-color: var(--default-bg);
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -71,5 +73,10 @@ a:hover {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.8px);
     -webkit-backdrop-filter: blur(4.8px);
+}
+
+.icon {
+    height: 12px;
+    width: 12px;
 }
 </style>
