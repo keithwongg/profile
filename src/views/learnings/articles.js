@@ -1,6 +1,6 @@
-import FirstLearning from "@/views/learnings/FirstLearning.vue"
+import PrefixingGitCommits from "@/views/learnings/PrefixingGitCommits.vue"
 import SecondLearning from "@/views/learnings/SecondLearning.vue"
 export const articles = {
-    'first-learn': FirstLearning,
+    'prefixing-git-commits': PrefixingGitCommits,
     'second-learn': SecondLearning
 }

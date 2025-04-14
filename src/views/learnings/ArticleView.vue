@@ -11,12 +11,18 @@ const matchedComponent = computed(() => {
 </script>
 
 <template>
-    <RouterLink to="/learnings">
-        <span>
-            < Back </span>
-    </RouterLink>
+    <div class="back">
+        <RouterLink to="/learnings">
+            <span>
+                < Back </span>
+        </RouterLink>
+    </div>
     <component :is="matchedComponent" v-if="matchedComponent"></component>
     <span v-else>Component not found</span>
 </template>
 
-<style scoped></style>
+<style scoped>
+.back {
+    margin-bottom: 24px;
+}
+</style>
