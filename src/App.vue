@@ -15,13 +15,16 @@ const isBase = computed(() => route.name === 'home')
       </template>
     </RouterView>
   </main>
-  <NavBar />
+  <NavBar v-if="$route.meta.showNav !== false" />
 </template>
 
 <style scoped>
 main {
   height: 100%;
   width: 100%;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  overflow-y: scroll;
 }
 
 .centralize {
@@ -29,5 +32,11 @@ main {
   flex-direction: column;
   place-items: center;
   justify-content: center;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 0px;
+  }
 }
 </style>

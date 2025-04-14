@@ -1,11 +1,8 @@
 <script setup>
-
 </script>
 
 <template>
-  <div class="container">
-    <h1>coming soon...</h1>
-  </div>
+    <h1>this is my second learning ... blah balbh </h1>
 </template>
 
 <style scoped></style>

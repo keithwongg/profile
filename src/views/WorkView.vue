@@ -36,8 +36,8 @@ import faDownload from '@/components/icon/faDownload.vue';
       <div>
         <p>Fixed an average of 15+ production issues per week, with short turn around times. Worked on 2 government
           projects. Fulfilled compliance requirements. Developed new enhancements. Created and instilled a culture of
-          documentation within the team. I also optimized long running queries by resolving common pitfalls and using
-          indexing strategies like clustered and non-clustered indexes.
+          documentation within the team. Optimized long running queries by resolving common pitfalls and used various
+          indexing strategies.
         </p>
       </div>
     </div>

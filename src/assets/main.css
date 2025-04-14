@@ -41,9 +41,15 @@ a:hover {
 } */
 
 .container {
-  margin-top: 32px;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin: 32px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 32px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
 
 /* @media (min-width: 1024px) {

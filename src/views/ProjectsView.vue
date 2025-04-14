@@ -9,7 +9,7 @@
 
     <br />
 
-    <p>InActive:</p>
+    <p>Inactive:</p>
     <p>Telegram bots: sleep calculator, supamu</p>
     <p>Network Analytics Visualizer</p>
   </div>
