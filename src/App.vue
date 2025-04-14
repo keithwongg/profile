@@ -22,6 +22,7 @@ const isBase = computed(() => route.name === 'home')
 main {
   height: 100%;
   width: 100%;
+  padding-top: 40px;
   padding-bottom: 60px;
   overflow-y: scroll;
 }
@@ -31,5 +32,11 @@ main {
   flex-direction: column;
   place-items: center;
   justify-content: center;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 0px;
+  }
 }
 </style>

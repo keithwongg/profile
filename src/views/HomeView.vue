@@ -10,15 +10,15 @@ const isBase = computed(() => route.name === 'home')
     <div class="container">
         <ProfileCard v-if="isBase" />
         <div class="links-container">
-            <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }">
+            <RouterLink :to="{ name: 'work' }">
                 <span>Work</span>
             </RouterLink>
-            <RouterLink :class="{ selected: $route.name === 'projects' }" :to="{ name: 'projects' }">
+            <RouterLink :to="{ name: 'projects' }">
                 <span>Projects</span>
             </RouterLink>
-            <RouterLink :class="{ selected: $route.name === 'interests' }" :to="{ name: 'interests' }">
+            <!-- <RouterLink :to="{ name: 'interests' }">
                 <span>Interests</span>
-            </RouterLink>
+            </RouterLink> -->
         </div>
     </div>
 
@@ -35,7 +35,7 @@ const isBase = computed(() => route.name === 'home')
 .links-container {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 32px;
     margin-top: 12px;
 }
 

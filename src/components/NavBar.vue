@@ -1,82 +1,97 @@
 <script setup>
-import faHouse from './icon/faHouse.vue';
+import faCard from './icon/faCard.vue';
 </script>
 
 <template>
-    <div class="navbar-grid">
-        <RouterLink :class="{ selected: $route.name === 'home' }" :to="{ name: 'home' }">
-            <faHouse class="icon" />
-        </RouterLink>
-        <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }">
-            <span>Work</span>
-        </RouterLink>
-        <RouterLink :class="{ selected: $route.name === 'projects' }" :to="{ name: 'projects' }">
-            <span>Projects</span>
-        </RouterLink>
-        <RouterLink :class="{ selected: $route.name === 'interests' }" :to="{ name: 'interests' }">
-            <span>Interests</span>
-        </RouterLink>
-        <!-- <RouterLink :to="{ name: 'blog' }">
-                <span>Blog</span>
+    <div class="navbar">
+        <div class="parent">
+            <RouterLink :to="{ name: 'home' }" class="div1">
+                <faCard class="icon" />
+            </RouterLink>
+            <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }" class="div2">
+                <span>Work</span>
+            </RouterLink>
+            <RouterLink :class="{ selected: $route.name === 'projects' }" :to="{ name: 'projects' }" class="div3">
+                <span>Projects</span>
+            </RouterLink>
+            <!-- <RouterLink :class="{ selected: $route.name === 'interests' }" :to="{ name: 'interests' }" class="div4">
+                <span>Interests</span>
             </RouterLink> -->
+            <RouterLink :class="{ selected: $route.name === 'blog' }" :to="{ name: 'blog' }" class="div4">
+                <span>Blog</span>
+            </RouterLink>
+        </div>
     </div>
 </template>
 
 <style scoped>
-.navbar-grid {
+.navbar {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    height: 40px;
     width: 100%;
-    height: 32px;
-    border-top: 1px var(--default-highlight) solid;
+    display: flex;
+    place-items: center;
+    justify-content: center;
     background-color: var(--default-bg);
+}
 
+.parent {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr repeat(3, 2fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     place-items: center;
-    justify-content: space-between;
+    justify-items: center;
+    width: 340px;
 }
 
-.navbar {
-    margin-top: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-}
-
-a {
+.parent>a {
     color: var(--default-txt);
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    place-items: center;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.icon {
+    height: 14px;
+    width: 14px;
 }
 
 .selected {
-    color: var(--default-highlight);
-    /* From https://css.glass */
-    background: rgba(204, 153, 0, 0.31);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.8px);
-    -webkit-backdrop-filter: blur(4.8px);
+    color: var(--default-highlight) !important;
 }
 
 a:hover {
     color: var(--default-highlight);
-    /* From https://css.glass */
-    background: rgba(204, 153, 0, 0.31);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.8px);
-    -webkit-backdrop-filter: blur(4.8px);
 }
 
-.icon {
-    height: 12px;
-    width: 12px;
+@media (max-width: 600px) {
+    .navbar {
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        left: 0px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+    }
 }
 </style>

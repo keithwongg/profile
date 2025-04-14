@@ -3,7 +3,8 @@
 
 <template>
     <div class="container">
-        <h1>bouldering, specifically moonboarding</h1>
+        <h1>Interests</h1>
+        <p>Bouldering</p>
     </div>
 </template>
 
