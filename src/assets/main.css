@@ -41,14 +41,17 @@ a:hover {
 } */
 
 .container {
-  margin: 32px;
+  margin: 32px auto;
+  width: 50vw;
 }
 
 @media (max-width: 600px) {
   .container {
     margin-top: 32px;
+    margin-bottom: 40px;
     margin-left: 12px;
     margin-right: 12px;
+    width: auto;
   }
 }
 
@@ -64,3 +67,9 @@ a:hover {
     padding: 0 2rem;
   }
 } */
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}

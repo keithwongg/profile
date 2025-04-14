@@ -39,7 +39,10 @@ const router = createRouter({
       children: [{
         path: ':name',
         name: 'article',
-        component: ArticleView
+        component: ArticleView,
+        meta: {
+          showNav: false
+        }
       }]
     }
   ],
