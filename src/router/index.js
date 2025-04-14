@@ -2,8 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import WorkView from '@/views/WorkView.vue'
 import InterestsView from '@/views/InterestsView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
-import BlogView from '@/views/blog/BlogView.vue'
 import HomeView from '@/views/HomeView.vue'
+import LearningsView from '@/views/LearningsView.vue'
+import ArticleView from '@/views/learnings/ArticleView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,9 +33,14 @@ const router = createRouter({
       component: InterestsView
     },
     {
-      path: '/blog',
-      name: 'blog',
-      component: BlogView
+      path: '/learnings',
+      name: 'learnings',
+      component: LearningsView,
+      children: [{
+        path: ':name',
+        name: 'article',
+        component: ArticleView
+      }]
     }
   ],
 })

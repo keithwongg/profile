@@ -16,9 +16,9 @@ const isBase = computed(() => route.name === 'home')
             <RouterLink :to="{ name: 'projects' }">
                 <span>Projects</span>
             </RouterLink>
-            <!-- <RouterLink :to="{ name: 'interests' }">
-                <span>Interests</span>
-            </RouterLink> -->
+            <RouterLink :to="{ name: 'learnings' }">
+                <span>Learnings</span>
+            </RouterLink>
         </div>
     </div>
 
