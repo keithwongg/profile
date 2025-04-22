@@ -95,6 +95,8 @@ pre {
   margin-top: 12px;
   margin-bottom: 12px;
   text-wrap: wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 pre>code {

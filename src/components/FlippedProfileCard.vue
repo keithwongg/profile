@@ -7,6 +7,14 @@ const isBack = ref(false);
 
 function flipCard() {
     isBack.value = !isBack.value
+    setTimeout(() => {
+        if (isBack.value) {
+            let sl = document.getElementById('sl')
+            sl.classList.add('hide')
+        } else {
+            sl.classList.remove('hide')
+        }
+    }, 150)
 }
 </script>
 
@@ -32,7 +40,7 @@ function flipCard() {
                     <span>Mail to: <a class="underline" href="mailto:keithwjh@outlook.sg">keithwjh@outlook.sg
                         </a></span>
                 </div>
-                <div class="social-links div3">
+                <div class="social-links div3" id="sl">
                     <a class="tag" href="https://github.com/keithwongg" target="_blank" draggable="false">
                         <img alt="github" src="/github.png" draggable="false" />
                         <span>GitHub</span>
@@ -114,6 +122,7 @@ a {
 }
 
 .profile-card-container-back {
+    z-index: 3;
     transform: rotateY(180deg);
 }
 
@@ -220,6 +229,10 @@ a {
 .qr {
     height: 220px;
     width: 220px;
+}
+
+.hide {
+    display: none;
 }
 
 @media (max-width: 600px) {
