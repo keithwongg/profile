@@ -8,17 +8,17 @@ import faCard from './icon/faCard.vue';
             <RouterLink :to="{ name: 'home' }" class="div1">
                 <faCard class="icon" />
             </RouterLink>
-            <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }" class="div2">
+            <!-- <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }" class="div2">
                 <span>Work</span>
-            </RouterLink>
+            </RouterLink> -->
             <RouterLink :class="{ selected: $route.name === 'projects' }" :to="{ name: 'projects' }" class="div3">
                 <span>Projects</span>
             </RouterLink>
             <!-- <RouterLink :class="{ selected: $route.name === 'interests' }" :to="{ name: 'interests' }" class="div4">
                 <span>Interests</span>
             </RouterLink> -->
-            <RouterLink :class="{ selected: $route.name === 'learnings' }" :to="{ name: 'learnings' }" class="div4">
-                <span>Learnings</span>
+            <RouterLink :class="{ selected: $route.name === 'utils' }" :to="{ name: 'utils' }" class="div4">
+                <span>Utils</span>
             </RouterLink>
         </div>
     </div>

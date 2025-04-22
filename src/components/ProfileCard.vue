@@ -9,8 +9,9 @@ import faDownload from './icon/faDownload.vue';
         </div>
         <div class="name-container div2">
             <h1>Keith Wong Jun Hsien</h1>
-            <span>Self-taught software developer. Accountancy graduate from Singapore Management University
-                (SMU). 💼 Open for work</span>
+            <span>Software Developer - mostly web. Accountancy graduate from Singapore Management University
+                (SMU).</span>
+            <span>💼 Open to work</span>
             <span>Mail to: <a class="underline" href="mailto:keithwjh@outlook.sg">keithwjh@outlook.sg </a></span>
         </div>
         <div class="social-links div3">

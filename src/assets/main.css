@@ -72,4 +72,32 @@ h1,
 h2,
 h3 {
   font-weight: bold;
+  margin-bottom: 12px;
+}
+
+code {
+  color: #9692e2;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(58, 54, 128, 0.46);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  padding: 2px 4px;
+}
+
+pre {
+  background: black;
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-wrap: wrap;
+}
+
+pre>code {
+  color: white;
+  background-color: transparent;
 }

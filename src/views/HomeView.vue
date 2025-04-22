@@ -10,14 +10,14 @@ const isBase = computed(() => route.name === 'home')
     <div class="container">
         <ProfileCard v-if="isBase" />
         <div class="links-container">
-            <RouterLink :to="{ name: 'work' }">
+            <!-- <RouterLink :to="{ name: 'work' }">
                 <span>Work</span>
-            </RouterLink>
+            </RouterLink> -->
             <RouterLink :to="{ name: 'projects' }">
                 <span>Projects</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'learnings' }">
-                <span>Learnings</span>
+            <RouterLink :to="{ name: 'utils' }">
+                <span>Utils</span>
             </RouterLink>
         </div>
     </div>

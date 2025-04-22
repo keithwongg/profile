@@ -12,7 +12,7 @@ const matchedComponent = computed(() => {
 
 <template>
     <div class="back">
-        <RouterLink to="/learnings">
+        <RouterLink to="/utils">
             <span>
                 < Back </span>
         </RouterLink>
