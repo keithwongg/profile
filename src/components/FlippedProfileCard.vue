@@ -51,7 +51,6 @@ function flipCard() {
                 </div>
             </div>
             <div class="profile-card-container-back">
-                <h1>Scan and Share</h1>
                 <div class="qr-container">
                     <img class="qr" alt="qr" src="/keithwjh-qr.png" draggable="false" />
                 </div>
@@ -211,15 +210,16 @@ a {
 }
 
 .qr-container {
-    height: 60%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+    place-items: center;
 }
 
 .qr {
-    height: 150px;
-    width: 150px;
+    height: 220px;
+    width: 220px;
 }
 
 @media (max-width: 600px) {
