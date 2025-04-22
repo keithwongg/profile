@@ -25,6 +25,11 @@ const route = useRoute();
                         <span>Terminal Alias</span>
                     </RouterLink>
                 </li>
+                <li>
+                    <RouterLink :to="{ name: 'article', params: { name: 'mdbook' } }">
+                        <span>Easy Documentation with MdBook</span>
+                    </RouterLink>
+                </li>
             </ul>
         </div>
         <RouterView></RouterView>

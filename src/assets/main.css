@@ -101,3 +101,21 @@ pre>code {
   color: white;
   background-color: transparent;
 }
+
+p,
+ul,
+blockquote {
+  margin-bottom: 8px;
+}
+
+blockquote {
+  /* From https://css.glass */
+  background: rgba(47, 57, 77, 0.35);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border-left: 3px #8F8F8F solid;
+  padding: 4px 4px 4px 8px;
+}
