@@ -2,13 +2,15 @@
 import ProfileCard from '@/components/ProfileCard.vue';
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
+import FlippedProfileCard from '@/components/FlippedProfileCard.vue';
 const route = useRoute();
 const isBase = computed(() => route.name === 'home')
 </script>
 
 <template>
     <div class="container">
-        <ProfileCard v-if="isBase" />
+        <!-- <ProfileCard v-if="isBase" /> -->
+        <FlippedProfileCard v-if="isBase" />
         <div class="links-container">
             <!-- <RouterLink :to="{ name: 'work' }">
                 <span>Work</span>
