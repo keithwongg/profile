@@ -48,13 +48,16 @@ function openMediumLink() {
 </template>
 
 <style scoped>
+.container {
+  width: 84%;
+}
+
 .project-container {
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 8px;
 }
-
 
 /* from project card component */
 .project-card {
@@ -105,6 +108,10 @@ function openMediumLink() {
 }
 
 @media (max-width: 600px) {
+  .container {
+    width: auto;
+  }
+
   .project-card {
     width: 100%;
   }
