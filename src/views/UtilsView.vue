@@ -30,6 +30,11 @@ const route = useRoute();
                         <span>Easy Documentation with MdBook</span>
                     </RouterLink>
                 </li>
+                <li>
+                    <RouterLink :to="{ name: 'article', params: { name: 'fe-utils' } }">
+                        <span>Useful Front-End Utilities</span>
+                    </RouterLink>
+                </li>
             </ul>
         </div>
         <RouterView></RouterView>
