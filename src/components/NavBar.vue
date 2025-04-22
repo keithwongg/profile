@@ -8,17 +8,17 @@ import faCard from './icon/faCard.vue';
             <RouterLink :to="{ name: 'home' }" class="div1">
                 <faCard class="icon" />
             </RouterLink>
-            <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }" class="div2">
+            <!-- <RouterLink :class="{ selected: $route.name === 'work' }" :to="{ name: 'work' }" class="div2">
                 <span>Work</span>
-            </RouterLink>
-            <RouterLink :class="{ selected: $route.name === 'projects' }" :to="{ name: 'projects' }" class="div3">
+            </RouterLink> -->
+            <RouterLink :class="{ selected: $route.name === 'projects' }" :to="{ name: 'projects' }" class="div2">
                 <span>Projects</span>
             </RouterLink>
             <!-- <RouterLink :class="{ selected: $route.name === 'interests' }" :to="{ name: 'interests' }" class="div4">
                 <span>Interests</span>
             </RouterLink> -->
-            <RouterLink :class="{ selected: $route.name === 'learnings' }" :to="{ name: 'learnings' }" class="div4">
-                <span>Learnings</span>
+            <RouterLink :class="{ selected: $route.name === 'utils' }" :to="{ name: 'utils' }" class="div3">
+                <span>Utilities</span>
             </RouterLink>
         </div>
     </div>
@@ -39,7 +39,7 @@ import faCard from './icon/faCard.vue';
 
 .parent {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-columns: 1fr repeat(2, 2fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -62,10 +62,6 @@ import faCard from './icon/faCard.vue';
 
 .div3 {
     grid-area: 1 / 3 / 2 / 4;
-}
-
-.div4 {
-    grid-area: 1 / 4 / 2 / 5;
 }
 
 .icon {

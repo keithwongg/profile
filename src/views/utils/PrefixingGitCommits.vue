@@ -22,7 +22,7 @@
     <p>Path: <code>your_repo/.git/config</code></p>
     <p>Add the following:</p>
     <pre><code>[commit]
-    template = .git/.gitmessage.txt</code></pre>
+template = .git/.gitmessage.txt</code></pre>
     <p>The file name does not have to be <code>gitmessage</code>.</p>
 
     <br />

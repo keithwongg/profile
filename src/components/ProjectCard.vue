@@ -9,9 +9,9 @@ const props = defineProps({
 
 <template>
     <a :href="props.link" class="project-card parent" target="_blank">
-        <div class="title div1">{{ props.title }}</div>
-        <div class="description div2">{{ props.description }}</div>
-        <div class="made-with div3">{{ props.tech }}</div>
+        <span class="title div1">{{ props.title }}</span>
+        <span class="description div2">{{ props.description }}</span>
+        <span class="made-with div3">{{ props.tech }}</span>
     </a>
 </template>
 
@@ -53,6 +53,13 @@ const props = defineProps({
 }
 
 .title {
+    font-size: 20px;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .project-card {
+        width: 100%;
+    }
 }
 </style>
